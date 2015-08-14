@@ -1,6 +1,6 @@
+###DevOps_Sample_Puppet###
 
-
-Steps for Puppet :
+Steps to use Sample Puppet Manifest file :
 
         1.	Configure site.pp file on the puppet master, which is under /etc/puppet/manifest/
             [root@master manifests]# cat site.pp
@@ -48,7 +48,7 @@ So the whole content of our module named tomcat will be inside the directory/etc
             ensure => running,
     }
         exec { 'apt-update':
-    command => '/usr/bin/sudo  /bin/rm -rf /var/lib/tomcat7/webapps/ashutosh.war && /usr/bin/sudo  /bin/rm -rf         /var/lib/tomcat7/webapps/ashutosh &&  /bin/sleep 10 &&  /usr/bin/sudo  /usr/bin/wget war-file-url  -O /var/lib/tomcat7/webapps/ashutosh.war',
+    command => '/usr/bin/sudo  /bin/rm -rf /var/lib/tomcat7/webapps/war-file && /usr/bin/sudo  /bin/rm -rf         /var/lib/tomcat7/webapps/war-file &&  /bin/sleep 10 &&  /usr/bin/sudo  /usr/bin/wget war-file  -O /var/lib/tomcat7/webapps/war-file',
       path => '/var/lib/tomcat7/webapps/',
     }
     }
