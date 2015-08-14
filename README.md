@@ -29,6 +29,8 @@ fileserver.conf  modules    puppet.conf.rpmsave
 
 [root@master puppet]# touch modules/tomcat/manifests/init.pp
 
+
+
 In the above example we created a directory called modules and also created directories named files,manifests,templates inside it.And we also created a file called init.pp inside manifests directory(which is very much necessary)
 So the whole content of our module named tomcat will be inside the directory/etc/puppet/modules/tomcat/
 
