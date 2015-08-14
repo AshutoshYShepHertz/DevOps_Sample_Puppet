@@ -1,0 +1,1 @@
+Files.(these are the files which can be directly deployed on your puppet clients, for example httpd.con,yum.conf etc)
